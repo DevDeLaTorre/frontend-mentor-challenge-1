@@ -1,0 +1,82 @@
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+  font-family: "Epilogue", sans-serif;
+}
+
+header,
+.container {
+  width: 375px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.container--hero,
+.container--hero_image {
+  width: 100%;
+}
+
+.container--title {
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+.container--description {
+  padding: 0 1rem 1rem;
+  color: var(--medium-gray);
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.container--cta {
+  display: block;
+  width: 8rem;
+  margin: 0 auto;
+  padding: 0.8rem 0.5rem;
+  border-radius: 15px;
+  color: var(--almost-white);
+  font-size: 0.9rem;
+  text-align: center;
+  background-color: var(--almost-black);
+}
+
+.container--clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2.5rem 0;
+}
+
+.container--client_logo {
+  width: 3rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 376px) {
+  .attribution {
+    visibility: hidden;
+  }
+}
