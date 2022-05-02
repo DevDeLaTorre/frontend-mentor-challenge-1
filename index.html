@@ -24,49 +24,87 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <img class="navbar--logo" src="./images/logo.svg" alt="" />
-        <img class="navbar--menu" src="./images/icon-menu.svg" alt="" />
-        <!--Features Company Careers About Login Register-->
+    <div class="overlay hidden"></div>
+    <header class="header">
+      <img class="header--logo" src="./images/logo.svg" alt="" />
+      <nav class="header--navbar">
+        <div class="closeContainer">
+          <img class="closeIcon" src="./images/icon-close-menu.svg" />
+        </div>
+        <ul class="menuoptions">
+          <li class="featuresSubmenu">
+            Features <img src="./images/icon-arrow-down.svg" />
+            <ul class="submenu hidden">
+              <li><img src="./images/icon-todo.svg" /> To Do List</li>
+              <li><img src="./images/icon-calendar.svg" /> Calendars</li>
+              <li><img src="./images/icon-reminders.svg" /> Reminders</li>
+              <li><img src="./images/icon-planning.svg" /> Planning</li>
+            </ul>
+          </li>
+
+          <li class="companySubmenu">
+            Company <img src="./images/icon-arrow-down.svg" />
+            <ul class="submenu hidden">
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+        <div class="header--buttons">
+          <a href="" class="button-borderless">Login</a>
+          <a href="" class="button">Register</a>
+        </div>
       </nav>
+      <img class="header--menu" src="./images/icon-menu.svg" alt="" />
     </header>
     <main class="container">
-      <figure class="container--hero">
-        <img
-          class="container--hero_image"
-          src="./images/image-hero-mobile.png"
-          alt="Hero Image"
-        />
-      </figure>
-      <h1 class="container--title">Make remote work</h1>
-      <h5 class="container--description">
-        Get your team in sync, no matter your location. Streamline processes,
-        create team rituals, and watch productivity soar.
-      </h5>
-      <a class="container--cta" type="button">Learn more</a>
-      <section class="container--clients">
-        <img
-          src="./images/client-databiz.svg"
-          alt=""
-          class="container--client_logo"
-        />
-        <img
-          src="./images/client-audiophile.svg"
-          alt=""
-          class="container--client_logo"
-        />
-        <img
-          src="./images/client-meet.svg"
-          alt=""
-          class="container--client_logo"
-        />
-        <img
-          src="./images/client-maker.svg"
-          alt=""
-          class="container--client_logo"
-        />
-      </section>
+      <div>
+        <figure class="container--hero">
+          <img
+            class="container--hero_image hero-mobile"
+            src="./images/image-hero-mobile.png"
+            alt="Hero Image"
+          />
+          <img
+            class="container--hero_image hero-desktop"
+            src="./images/image-hero-desktop.png"
+            alt="Hero Image"
+          />
+        </figure>
+      </div>
+      <div>
+        <h1 class="container--title">Make remote work</h1>
+        <h5 class="container--description">
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </h5>
+        <a class="container--cta" type="button">Learn more</a>
+        <section class="container--clients">
+          <img
+            src="./images/client-databiz.svg"
+            alt=""
+            class="container--client_logo"
+          />
+          <img
+            src="./images/client-audiophile.svg"
+            alt=""
+            class="container--client_logo"
+          />
+          <img
+            src="./images/client-meet.svg"
+            alt=""
+            class="container--client_logo"
+          />
+          <img
+            src="./images/client-maker.svg"
+            alt=""
+            class="container--client_logo"
+          />
+        </section>
+      </div>
     </main>
 
     <div class="attribution">
@@ -75,5 +113,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Luis De La Torre Aguilar</a>.
     </div>
+
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
