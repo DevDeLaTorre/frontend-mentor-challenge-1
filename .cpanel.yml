@@ -2,7 +2,9 @@
 deployment:
   tasks:
  # Next line defines a DEPLOYPATH with the path to the document root of your website so that you will not have to enter it in each command manually:
-    - export DEPLOYPATH=/home/nctests/git.nctest.info/
+   deployment:
+  tasks:
+    - export DEPLOYPATH=/home/devdhbip/fm-challenge-1.devdelatorre.dev/
 
 # This line copies the index.php file to deploy path - the document root of your website:
     - cp index.html $DEPLOYPATH
